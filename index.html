@@ -1,50 +1,97 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <style>
-      p {
-        text-align: center;
-        font-size: 60px;
-        margin-top: 0px;
-      }
-    </style>
-    <title>Belenchiña</title>
-  </head>
-  <body>
-    <p id="demo"></p>
+<!DOCTYPE HTML>
+<html>
 
-    <script>
-      // Set the date we're counting down to
-      var countDownDate = new Date("Jul 9, 2020 16:00:00").getTime();
+<head>
+	<title>Aceitunera</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+</head>
 
-      // Update the count down every 1 second
-      var x = setInterval(function () {
-        // Get today's date and time
-        var now = new Date().getTime();
+<body class="is-preload">
 
-        // Find the distance between now and the count down date
-        var distance = countDownDate - now;
+	<!-- Wrapper -->
+	<div id="wrapper">
 
-        // Time calculations for days, hours, minutes and seconds
-        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        var hours = Math.floor(
-          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-        );
-        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+		<!-- Intro -->
+		<section class="intro">
+			<header>
+				<h1>Hoy es el cumpleaños de Belén</h1>
+				<p>Y cumple 28 años</p>
+				<ul class="actions">
+					<li><a href="#first" class="arrow scrolly"><span class="label">Next</span></a></li>
+				</ul>
+			</header>
+			<div class="content">
+				<span class="image fill" data-position="center"><img src="images/photo_2020-07-09_16-20-06.jpg"
+						alt="" /></span>
+			</div>
+		</section>
 
-        // Output the result in an element with id="demo"
-        document.getElementById("demo").innerHTML =
-          days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+		<!-- Section -->
+		<section id="first">
+			<header>
+				<h2>También es conocida como currusca, Belenchiña o <a href="https://www.instagram.com/aceitunera/"
+						target="_blank">aceitunera</a></h2>
+			</header>
+			<div class="content">
+				<h2 style="text-align: center">Sopiña lover❤️</h2>
+				<span class="image main"><img src="images/sopita.jpg" alt="" /></span>
+			</div>
+		</section>
 
-        // If the count down is over, write some text
-        if (distance < 0) {
-          clearInterval(x);
-          document.getElementById("demo").innerHTML = "EXPIRED";
-        }
-      }, 1000);
-    </script>
-  </body>
+		<!-- Section -->
+		<section>
+			<header>
+				<h2>Guía para conocer a Belén</h2>
+			</header>
+			<div class="content">
+				<!-- <p><strong>Etiam tristique libero</strong> eu nibh porttitor amet fermentum. Nullam venenatis erat id
+					vehicula ultrices sed ultricies condimentum.</p> -->
+				<ul class="feature-icons">
+					<li class="icon solid fa-gamepad">Le gustan las maquinitas</li>
+					<li class="icon solid fa-horse-head">Apasionada de los caballos</li>
+					<li class="icon solid fa-glass-whiskey">Deja los posos de todo</li>
+					<li class="icon solid fa-video">Le gusta Disney</li>
+					<li class="icon solid fa-bell" >No se levanta con la alarma</li>
+					<li class="icon solid fa-glass-cheers" >Gústalle a festa</li>
+					</ul>
+					<h3>Y sus frases más reconocibles:</h3>
+					<ul class="feature-icons">
+					<li class="icon solid fa-hand-paper"><i>"A mi déjame"</i></li>
+					<li class="icon solid fa-bed"><i>"Ya voy"</i></li>
+					<li class="icon solid fa-hamburger"><i>"A mi que me la pongan sin pepinillo"</i></li>
+					<li class="icon solid fa-clock"><i>"Un momento"</i></li>
+					</ul>
+			</div>
+		</section>
+
+		<!-- Section -->
+		<section>
+			<header>
+				<h2>Y además, este año Belén nos predijo a todos el 2020</h2>
+			</header>
+			<div class="content">
+				<video width="300" height="600" controls>
+					<source src="images/10099.mp4" type="video/mp4">
+				  Tu navegador no reproduce este video, chato :(
+				  </video>
+			</div>
+		</section>
+
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
 </html>
